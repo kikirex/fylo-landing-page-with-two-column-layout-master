@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Fylo Landing Page with Two Column Layout</title>
+  
+  <!-- Strict Tailwind v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <!-- Standard Fylo Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-[hsl(243,87%,12%)] font-['Open_Sans',sans-serif] min-h-screen flex flex-col p-6 md:p-12">
+  
+  <!-- Header / Navigation -->
+  <header class="w-full max-w-7xl mx-auto flex justify-between items-center mb-16">
+    <img src="./images/logo.svg" alt="Fylo Logo" class="h-8 md:h-12">
+    <nav class="flex gap-6 md:gap-12 font-['Raleway',sans-serif] font-bold text-sm md:text-base">
+      <a href="#" class="hover:text-[hsl(224,93%,58%)] transition-colors">Features</a>
+      <a href="#" class="hover:text-[hsl(224,93%,58%)] transition-colors">Team</a>
+      <a href="#" class="hover:text-[hsl(224,93%,58%)] transition-colors">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Two Column Main Layout -->
+  <!-- lg:flex-row places them beside each other on desktop; flex-col stacks them on mobile -->
+  <main class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24 flex-grow">
+    
+    <!-- Introduction (Left side on desktop, top on mobile) -->
+    <div class="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
+      <h1 class="font-['Raleway',sans-serif] font-bold text-4xl md:text-5xl leading-[1.2]">
+        All your files in one secure location, accessible anywhere.
+      </h1>
+      <p class="text-lg md:text-xl text-[hsl(238,22%,44%)] leading-relaxed">
+        Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+      </p>
+    </div>
+
+    <!-- Sign-up Form (Right side on desktop, bottom on mobile) -->
+    <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+      
+      <!-- Native HTML5 validation used via 'required' and input types -->
+      <form class="w-full max-w-md bg-white border border-gray-200 p-8 rounded-xl shadow-2xl flex flex-col gap-5">
+        <h2 class="text-2xl font-bold font-['Raleway',sans-serif]">Get Early Access</h2>
+        <p class="text-[hsl(238,22%,44%)] text-sm mb-2">Please fill out the form below to secure your spot.</p>
+        
+        <input 
+          type="text" 
+          name="firstName" 
+          placeholder="First Name" 
+          required 
+          class="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:border-[hsl(224,93%,58%)] focus:ring-2 focus:ring-[hsl(224,93%,58%)] text-gray-800 placeholder-gray-400"
+        >
+        
+        <input 
+          type="text" 
+          name="lastName" 
+          placeholder="Last Name" 
+          required 
+          class="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:border-[hsl(224,93%,58%)] focus:ring-2 focus:ring-[hsl(224,93%,58%)] text-gray-800 placeholder-gray-400"
+        >
+        
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Email Address" 
+          required 
+          class="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:border-[hsl(224,93%,58%)] focus:ring-2 focus:ring-[hsl(224,93%,58%)] text-gray-800 placeholder-gray-400"
+        >
+
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Password" 
+          required 
+          class="w-full border border-gray-300 rounded-md p-3 text-sm focus:outline-none focus:border-[hsl(224,93%,58%)] focus:ring-2 focus:ring-[hsl(224,93%,58%)] text-gray-800 placeholder-gray-400"
+        >
+        
+        <button 
+          type="submit" 
+          class="w-full bg-[hsl(224,93%,58%)] hover:bg-[#4d7ef5] transition-colors duration-200 text-white font-bold py-4 rounded-md shadow-[0_4px_10px_rgba(47,101,248,0.3)] mt-2 cursor-pointer"
+        >
+          Claim your free trial
+        </button>
+      </form>
+
+    </div>
+  </main>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+</head>
+<body class="bg-[hsl(240, 75%, 98%)] text-hsl(243, 87%, 12%) font-Open+Sans min-h-screen flex flex-col gap-12 md:gap-16 lg:gap-20 p-6 md:p-12 lg:p-20">
+
+  <nav class="flex justify-between items-center px-6 py-4 md:px-12 md:py-6">
+    <img src="./images/logo.svg" alt="Fylo Logo" class="h-8 md:h-10">
+    <ul class="hidden md:flex gap-8 text-sm font-semibold text-hsl(240, 75%, 12%)">
+      <li><a href="#" class="hover:text-hsl(243, 87%, 62%)">Features</a></li>
+      <li><a href="#" class="hover:text-hsl(243, 87%, 62%)">Team</a></li>
+      <li><a href="#" class="hover:text-hsl(243, 87%, 62%)">Sign In</a></li>
+    </ul>
+    <button class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5" />
+      </svg>
+    </button>
+  </nav>  
+
+
+
+  <h1 class="text-3xl md:text-4xl font-bold text-hsl(243, 87%, 12%)">All your files in one secure location, accessible anywhere.</h1>
+
+  <p class="text-lg text-hsl(243, 87%, 12%)">
+    Fylo stores your most important files in one secure location. 
+    Access them wherever you need, share and collaborate with friends, 
+    family, and co-workers.
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-4">
+    <input type="email" placeholder="Enter your email..." class="px-4 py-2 rounded-md border border-hsl(223, 100%, 88%) focus:outline-none focus:ring-2 focus:ring-hsl(243, 87%, 62%)">
+    <button class="bg-hsl(243, 87%, 62%) text-white px-6 py-2 rounded-md hover:bg-hsl(243, 87%, 52%) focus:outline-none focus:ring-2 focus:ring-hsl(243, 87%, 62%)">
+      Get Started
+    </button>
+  </div>
+  
+
+ <h2 class="text-2xl md:text-3xl font-bold text-hsl(243, 87%, 12%)">Stay productive, wherever you are</h2>
+
+ <p class="text-lg text-hsl(243, 87%, 12%)">
+   Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+ </p>
+
+  See how Fylo works
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy
+
+</body>
+</html>
